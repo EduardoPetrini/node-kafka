@@ -4,7 +4,7 @@ const Kafka = require('node-rdkafka');
 async function start(topic, message) {
   const producer = await createProducer();
 
-  console.log('I am ready to send');
+  console.log('I am ready to send the data');
 
   producer.setPollInterval(100);
 
